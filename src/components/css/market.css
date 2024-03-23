@@ -1,0 +1,78 @@
+.header {
+  background: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.market-section {
+  padding-bottom: 100px;
+}
+
+.coin-row {
+  border-bottom: 1px solid #fff;
+}
+
+.market-content__coin-list {
+  max-height: 500px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.table-container {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.table-auto {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-headers th {
+  background-color: #1d1b37;
+  color: white;
+  padding: 12px;
+  text-align: left;
+  border-bottom: 2px solid #310e68;
+}
+
+.table-data td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.coin-row:hover {
+  background-color: rgb(129, 129, 129);
+}
+
+.table-headers {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
+  background-color: #1d1b37;
+}
+
+@media screen and (max-width: 1109px) {
+  .table-data-market-cap, .table-data-market-high-24, .table-data-market-low-24 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .table-data-market-rank {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .table-data-market-change-24 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .table-font-size {
+    font-size: 11px;
+  }
+}
